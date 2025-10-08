@@ -11,9 +11,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6014E43E2E9600D500BB2581 /* MyTutorial */ = {
+		6014E43E2E9600D500BB2581 /* Sources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MyTutorial;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		6014E4332E9600D500BB2581 = {
 			isa = PBXGroup;
 			children = (
-				6014E43E2E9600D500BB2581 /* MyTutorial */,
+				6014E43E2E9600D500BB2581 /* Sources */,
 				6014E43D2E9600D500BB2581 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				6014E43E2E9600D500BB2581 /* MyTutorial */,
+				6014E43E2E9600D500BB2581 /* Sources */,
 			);
 			name = MyTutorial;
 			packageProductDependencies = (
