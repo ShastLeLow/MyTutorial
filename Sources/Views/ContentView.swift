@@ -13,7 +13,12 @@ struct ContentView: View {
             SidebarView()
         } detail: {
             DetailView()
+                .navigationTitle("")
+                .toolbarBackground(.hidden, for: .windowToolbar)
         }
-          
+        .navigationSplitViewStyle(.balanced)
+        .toolbar() {
+            AppToolbarContent()
+        }
     }
 }

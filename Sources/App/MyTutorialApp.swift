@@ -6,14 +6,29 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 
 struct MyTutorialApp: App {
+    var sharedModelContainer: ModelContainer = {
+        let schema = Schema([Item.self])
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        do {
+            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+        } catch {
+            fatalError("Could not create ModelContainer: \(error)")
+        }
+    }()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
-        .defaultSize(width: 1422, height: 800)
+        .modelContainer(sharedModelContainer)
+        .defaultSize(width: 1200, height: 600)
+        .windowToolbarStyle(.unified)
     }
+    
+    
 }
